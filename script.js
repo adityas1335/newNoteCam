@@ -58,7 +58,7 @@ takePhotoButton.addEventListener('click', async () => {
         photoOverlay.style.display = 'block';
 
         context.fillStyle = 'white';
-        context.fillRect(5, canvas.height - 127, 260, 122);
+        context.fillRect(5, 713 - 127, 260, 122);
         context.fillStyle = 'black';
         context.font = '20px Arial';
         context.fillText(`Latitude: ${latitude}`, 10, canvas.height - 115);

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo with Metadata Overlay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Photo with Metadata Overlay</h1>
+    <form id="photo-form">
+        <div class="form-group">
+            <label for="datetime">Date & Time:</label>
+            <input type="datetime-local" id="datetime" required>
+        </div>
+        <div class="form-group">
+            <label for="notes">Notes:</label>
+            <input type="text" id="notes" required>
+        </div>
+        <button type="button" id="take-photo">Take Photo</button>
+        <button type="button" id="switch-camera">Switch Camera</button>
+    </form>
+    <div id="photo-container">
+        <video id="video" width="1280" height="720" autoplay></video>
+        <canvas id="photo-canvas" width="1280" height="720"></canvas>
+        <div id="photo-overlay"></div>
+    </div>
+    <button id="save-photo">Save Photo</button>
+    <script src="script.js"></script>
+</body>
+</html>
